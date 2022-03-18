@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/kunde.css">
+    <title> Solbiler ApS | Dine oplysninfer</title>
+</head>
+<body class="wrapper">
+    <!-- Navigationsbar -->
+    <header>
+        <nav class="navigation__container">
+  
+          <!-- Mobil ikon -->
+          <label for="mobileicon" class="mobileiconlabel">&#9776;</label>
+          <input type="checkbox" id="mobileicon" class="mobileicon">
+          
+            <!-- Menu items -->
+            <div class="menuitems__container">
+              <a href="index.html" class="menuitem">Lej en bil</a>
+              <a href="provekorsler.html" class="menuitem">Prøvekørsler</a>
+              <a href="omos.html" class="menuitem">Om os</a>
+              <a  href="#" class="menuitem" >Log ind</a>
+            </div>
+  
+              <!-- Logo -->
+              <a href="index.html"><img class="companylogo" src="billeder/logo.png" alt="logo"></a> 
+        </nav>
+    </header>
+
+    <!-- Main sektion -->
+    <div class="billed_sektion"></div>
+      <div class="hovedindhold">
+        <section class="udstyrssektion">
+          <h1 class="overskrift">Dine oplysninger</h1>
+          <form class="formular" id="formular">
+              <div class="flexsektion">
+                  <label>Dit fornavn</label><input type="text" id="fornavn" class="formfelt" tabindex="1" required>
+                  <label>Vejnavn</label><input type="text" id="vejnavn" class="formfelt" tabindex="3" required>
+                  <label>Postnummer og By</label><input type="text" list="pbliste" id="postnr" class="formfelt" style="width: 275px;" tabindex="5" required>
+              </div>
+              <div class="flexsektion">
+                  <label>Efternavn</label><input type="text" id="efternavn" class="formfelt" tabindex="2" required>
+                  <label>Nr./etage</label><input type="text" id="vejnr" class="formfelt" tabindex="4" required>
+                  <label><input type="checkbox" class="checkboks" style="margin-top: 30px;" tabindex="6" required> Jeg er fyldt 18 år</label>
+              </div>
+      
+            <button type="submit" class="videreknap" id="videreknap" tabindex="7">Book nu</button>
+          </form>
+        </section>
+
+        <datalist id="pbliste"></datalist>
+      
+        <aside id="lejeoplysninger" class="lejeoplysninger">
+          <h2>Lejeoplysninger</h2>
+          <div id="totalindhold" class="totalindhold">ALT INKLUSIV:</div>
+        </aside>
+      </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="row">
+          <li>
+            <a href="omos.html"><h2>Om os</h2></a>
+              <ul>
+                <li>Historie</li>
+                <li>Værdier</li>
+                <li>Koncept</li>
+              </ul>
+          </li> 
+        
+          <li>
+            <h2>Åbningstider</h2>
+              <ul>
+                <li>Mandag-torsdag: 08.00-15.00</li>
+                <li>Fredag-lørdag: 08.00-14.00</li>
+                <li>Søndag: Lukket</li>
+              </ul>
+          </li>
+        
+          <li>
+            <h2>Kontakt</h2>
+              <ul>
+                <li>Skanderborgvej 239, 8260 Viby J</li>
+                <li>Tlf: +45 30 28 39 57</li>
+                <li>E-mail: info@solbiler.com</li>
+              </ul>
+          </li>
+          
+          <li>
+            <h2>Sociale medier</h2>
+              <div>
+                <a href="https://twitter.com/urtekram"><img src="billeder/twittericon.png" alt="twittericon" class="some_icon"></a>
+                <a href="https://www.facebook.com/urtekram/"><img src="billeder/facebookicon.png" alt="facebookicon" class="some_icon"></a>
+                <a href="https://www.instagram.com/urtekram/?hl=da"><img src="billeder/instagramicon.png" alt="instagramicon" class="some_icon"></a>
+                <a href="https://www.youtube.com/channel/UCISYiJNt73F38brJAi-YtcA"><img src="billeder/youtubeicon.png" alt="youtubeicon" class="some_icon"></a>
+              </div>
+          </li>
+        </ul>
+          <p class="copyright">Copyright © All Rights Reserved</p>
+      </footer>
+    <script src="js/kunde.js"></script>
+</body>
+</html>

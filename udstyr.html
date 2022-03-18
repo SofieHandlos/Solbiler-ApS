@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solbiler ApS | Valg af udstyr</title>
+    <link rel="stylesheet" href="css/udstyr.css">
+</head>
+<body class="wrapper">
+    <!-- Navigationsbar -->
+    <header>
+        <nav class="navigation__container">
+  
+          <!-- Mobil ikon -->
+          <label for="mobileicon" class="mobileiconlabel">&#9776;</label>
+          <input type="checkbox" id="mobileicon" class="mobileicon">
+          
+            <!-- Menu items -->
+            <div class="menuitems__container">
+              <a href="index.html" class="menuitem">Lej en bil</a>
+              <a href="provekorsler.html" class="menuitem">Prøvekørsler</a>
+              <a href="omos.html" class="menuitem">Om os</a>
+              <a  href="#" class="menuitem" >Log ind</a>
+            </div>
+  
+              <!-- Logo -->
+              <a href="index.html"><img class="companylogo" src="billeder/logo.png" alt="logo"></a> 
+        </nav>
+    </header>
+
+    <!-- Main sektion -->
+        <div class="billed_sektion"></div>
+        <div class="hovedindhold">
+            <aside id="lejeoplysninger" class="lejeoplysninger"> 
+              <h2>Godt valg!</h2>
+            </aside>
+            <section class="udstyrssektion">
+                <h1>Vælg ekstraudstyr (ekskl. moms)</h1>
+                <form class="formular" id="formular" action="kunde.html">
+                    <div class="flexsektion">
+                      <label>Ekstra chauffør kr. 199,00<input type="checkbox" data-udstyr="Ekstra chauffør" class="checkboks" value="199.00"></label>
+                      <label>Barnesæde (5-12 år) kr. 155,00 <input type="checkbox" data-udstyr="Barnesæde (5-12 år)" class="checkboks" value="155.00"></label>
+                      <label>Vejhjælp+ kr. 120,00 <input type="checkbox" data-udstyr="Vejhjælp+" class="checkboks" value="120.00"></label>
+                      <label>Lift-net (0-1 år) kr. 100,00 <input type="checkbox" data-udstyr="Lift-net (0-1 år)" class="checkboks" value="100.00"></label>
+                    </div>
+                    <div class="flexsektion">
+                      <label>Barnesæde (1-4 år) kr. 140,00<input type="checkbox" data-udstyr="Barnesæde (1-4 år)" class="checkboks" value="140.00"></label>
+                      <label>GPS navigation kr. 250,00<input type="checkbox" data-udstyr="GPS navigation" class="checkboks" value="250.00"></label>
+                      <label>Snekæder kr. 188,00<input type="checkbox" data-udstyr="Snekæder" class="checkboks" value="188.00"></label>
+                    </div>
+                    <button class="videreknap">Videre</button>
+                </form>
+            </section>
+            <aside id="totaldkk" class="totaldkk">
+              <div id="totalindhold" class="totalindhold">ALT INKLUSIV:</div>
+            </aside>
+        </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="row">
+          <li>
+            <a href="omos.html"><h2>Om os</h2></a>
+              <ul>
+                <li>Historie</li>
+                <li>Værdier</li>
+                <li>Koncept</li>
+              </ul>
+          </li> 
+        
+          <li>
+            <h2>Åbningstider</h2>
+              <ul>
+                <li>Mandag-torsdag: 08.00-15.00</li>
+                <li>Fredag-lørdag: 08.00-14.00</li>
+                <li>Søndag: Lukket</li>
+              </ul>
+          </li>
+        
+          <li>
+            <h2>Kontakt</h2>
+              <ul>
+                <li>Skanderborgvej 239, 8260 Viby J</li>
+                <li>Tlf: +45 30 28 39 57</li>
+                <li>E-mail: info@solbiler.com</li>
+              </ul>
+          </li>
+          
+          <li>
+            <h2>Sociale medier</h2>
+              <div>
+                <a href="https://twitter.com/urtekram"><img src="billeder/twittericon.png" alt="twittericon" class="some_icon"></a>
+                <a href="https://www.facebook.com/urtekram/"><img src="billeder/facebookicon.png" alt="facebookicon" class="some_icon"></a>
+                <a href="https://www.instagram.com/urtekram/?hl=da"><img src="billeder/instagramicon.png" alt="instagramicon" class="some_icon"></a>
+                <a href="https://www.youtube.com/channel/UCISYiJNt73F38brJAi-YtcA"><img src="billeder/youtubeicon.png" alt="youtubeicon" class="some_icon"></a>
+              </div>
+          </li>
+        </ul>
+          <p class="copyright">Copyright © All Rights Reserved</p>
+      </footer>
+        
+    <script src="js/udstyr.js"></script>
+</body>
+</html>

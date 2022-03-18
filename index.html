@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solbiler ApS | Lej en bil</title>
+    <link rel="stylesheet" href="css/minstil.css">
+</head>
+
+<body class="wrapper">
+    <!-- Navigationsbar -->
+    <header>
+        <nav class="navigation__container">
+  
+          <!-- Mobil ikon -->
+          <label for="mobileicon" class="mobileiconlabel">&#9776;</label>
+          <input type="checkbox" id="mobileicon" class="mobileicon">
+          
+            <!-- Menu items -->
+            <div class="menuitems__container">
+              <a href="index.html" class="menuitem">Lej en bil</a>
+              <a href="provekorsler.html" class="menuitem">Prøvekørsler</a>
+              <a href="omos.html" class="menuitem">Om os</a>
+              <a  href="#" class="menuitem" >Log ind</a>
+            </div>
+  
+              <!-- Logo -->
+              <a href="index.html"><img class="companylogo" src="billeder/logo.png" alt="logo"></a> 
+        </nav>
+    </header> 
+    <section class="billed_sektion">
+        <form id="formular" class="formular" action="" method="">
+            <h1 class="formular_overskrift">Find bilen som passer dig</h1>
+
+            <div class="formular_felter">
+                <div>
+                    <label for="afhentning" class="etiket">Jeg henter den</label>
+                    <input type="date" id="afhentning" required>
+                </div>
+
+                <div>
+                    <label for="aflevering" class="etiket">Jeg afleverer den</label>
+                    <input type="date" id="aflevering" required>
+                </div>
+
+                <div>
+                    <label for="personer" class="etiket">Antal personer</label>
+                    <input type="number" value="1" id="personer" max="7" min="1" required>
+                </div>
+
+                <div>
+                    <label for="kufferter" class="etiket">Antal kufferter</label>
+                    <select id="kufferter">
+                        <option value="0">0 - kun taske</option>
+                        <option value="1">1 kuffert</option>
+                        <option value="2">2 kufferter</option>
+                        <option value="3">3 kufferter</option>
+                        <option value="4">4 kufferter</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="formular_knap">
+                <button id="knap" class="knap" type="submit">Søg</button>
+                <button id="resetknap" class="resetknap" type="reset">Reset</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="bil_sektion" id="bil_sektion"></section>
+
+    <template id="skabelon_output">
+        <div class="bil">
+            <img>
+            <div class="bilMM"></div>
+            <div class="bildetaljer">
+                <div class="kategori">Kategori: </div>
+                <div class="antalpersoner">Personer: </div>
+                <div class="antalkufferter">Kufferter: </div>
+                <div class="antaldageialt">Antal lejedage: </div>
+            </div>
+            <div class="prisogbook">
+                <div class="lejeudgift">DKK: </div>
+                <div class="lejeudgiftEuro">EUR: </div>
+                <a href="#" class="booknu_knap">Book nu</a>
+               
+            </div>
+        </div>
+    </template>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="row">
+          <li>
+            <a href="omos.html"><h2>Om os</h2></a>
+              <ul>
+                <li>Historie</li>
+                <li>Værdier</li>
+                <li>Koncept</li>
+              </ul>
+          </li> 
+        
+          <li>
+            <h2>Åbningstider</h2>
+              <ul>
+                <li>Mandag-torsdag: 08.00-15.00</li>
+                <li>Fredag-lørdag: 08.00-14.00</li>
+                <li>Søndag: Lukket</li>
+              </ul>
+          </li>
+        
+          <li>
+            <h2>Kontakt</h2>
+              <ul>
+                <li>Skanderborgvej 239, 8260 Viby J</li>
+                <li>Tlf: +45 30 28 39 57</li>
+                <li>E-mail: info@solbiler.com</li>
+              </ul>
+          </li>
+          
+          <li>
+            <h2>Sociale medier</h2>
+              <div>
+                <a href="https://twitter.com/urtekram"><img src="billeder/twittericon.png" alt="twittericon" class="some_icon"></a>
+                <a href="https://www.facebook.com/urtekram/"><img src="billeder/facebookicon.png" alt="facebookicon" class="some_icon"></a>
+                <a href="https://www.instagram.com/urtekram/?hl=da"><img src="billeder/instagramicon.png" alt="instagramicon" class="some_icon"></a>
+                <a href="https://www.youtube.com/channel/UCISYiJNt73F38brJAi-YtcA"><img src="billeder/youtubeicon.png" alt="youtubeicon" class="some_icon"></a>
+              </div>
+          </li>
+        </ul>
+          <p class="copyright">Copyright © All Rights Reserved</p>
+      </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
